@@ -1,0 +1,29 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("God Kenjis Gui", "Ocean")
+ --Main
+local Main = Window:NewTab("AutoGrind")
+local MainSection = Main:NewSection("AutoGrind")
+
+MainSection:NewButton("#1 Autogrinding script", "Zama hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangnhudb/Zama-Hub/main/Zama%20Hub%20Pe"))()
+end)
+
+MainSection:NewButton("Vg Hub", "Decent script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+MainSection:NewButton("Solaris Hub (not working from 12/22/2022)", "Good script but with a key", function()
+     loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
+
+--Discord
+local Tab = Window:NewTab("Discord")
+local Section = Tab:NewSection("Discord tag")
+
+Section:NewButton("vsag#9999", "discord user n tag", function()
+    print("Clicked")
+end)
+
+Section:NewButton("https://discord.gg/fQFhVCp3gC", "discord server (about bloxfruits)", function()
+    print("Clicked")
+end)
